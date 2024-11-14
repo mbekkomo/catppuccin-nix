@@ -14,6 +14,17 @@
       g = toString x.g;
       b = toString x.b;
     in "rgb(${r}, ${g}, ${b})";
+
+    
+  /**
+    Convert an attribute to `hsl()` notation.
+
+    # Type
+
+    ```
+    toHSLNotation :: { h, s, l } -> string
+    ```
+  */
   toHSLNotation = x:
     let
       h = toString x.h;
